@@ -70,7 +70,7 @@ Additionally, adaptive one-way functions do not effectively prevent reversal of 
 
 Since resources are normally considered limited, a common rule of thumb for tuning the work factor (or cost) is to make `protect()` run as slow as possible without affecting the users' experience and without increasing the need for extra hardware over budget. So, if the registration and authentication's cases accept `protect()` taking up to 1 second, you can tune the cost so that it takes 1 second to run on your hardware. This way, it shouldn't be so slow that your users become affected, but it should also affect the attackers' attempt as much as possible.
 
-While there is a minimum number of iterations recommended to ensure data safety, this value changes every year as technology improves. An example of the iteration count chosen by a well known company is the 10,000 iterations Apple uses for its [iTunes passwords](https://github.com/SNBSniper/Programming/raw/master/iOS/iOS_Security_May12.pdf) (using PBKDF2). 
+While there is a minimum number of iterations recommended to ensure data safety, this value changes every year as technology improves. An example of the iteration count chosen by a well known company is the 10 million iterations Apple uses for its [iTunes passwords](https://web.archive.org/web/20181231193335/https://www.apple.com/business/site/docs/iOS_Security_Guide.pdf) (using PBKDF2). 
 
 However, it is critical to understand that a single work factor does not fit all designs, [experimentation is important](Password_Storage_Cheat_Sheet.md#ref6).
 
